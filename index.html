@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList | Kainowf</title>
+    <!--
+        - font awesome icon link
+    -->
+    <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon" />
+    <!--
+        CSS
+    -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!--
+        SCRIPT
+    -->
+    <script defer src="assets/js/script.js"></script>
+    <!--
+        FONT
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+    <!--
+        - font awesome icon link
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <!--
+        #HEADER
+    -->
+    <header>
+      <div class="header__container flex-col">
+        <!--
+            #NAV
+          -->
+        <nav class="header__navbar flex-row">
+          <!--
+            .TITLE
+          -->
+          <div class="title__container flex-row">
+            <i class="fas fa-pen"></i>
+            <span class="header-title">To Do List</span>
+          </div>
+          <div class="user__container flex-row">
+            <span class="user_name">Kainowf</span>
+            <i class="fas fa-user"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--
+        #MAIN
+    -->
+    <main>
+      <div class="main__container">
+        <!--
+            #TOOLBAR
+        -->
+        <div class="toolbar__container flex-row">
+          <!--
+                  .BREADCRUMBS
+                -->
+          <div class="toolbar__breadcrumbs flex-row">
+            <button class="btn btn-primary">Add</button>
+            <span>ToDoList</span>
+            <div class="cog__container">
+              <i class="fas fa-cog"></i>
+            </div>
+          </div>
+          <!--
+                  .SEARCHBAR
+                -->
+          <div class="toolbar__searchbar flex-row">
+            <div class="toolbar__searchbar-actions flex-row">
+              <div class="searchbar__input flex-row">
+                <button class="btn search-btn btn-secondary">
+                  <i class="fas fa-search"></i>
+                </button>
+                <input
+                  placeholder="Search..."
+                  class="search_form"
+                  type="text" />
+              </div>
+              <button class="btn dropdown-btn btn-secondary">
+                <i class="fas fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+          <!--
+            .ACTIONS
+            -->
+          <div class="toolbar__actions flex-row">
+            <button class="btn btn-secondary btn-secondary-mode-left">
+              <i class="fas fa-list"></i>
+            </button>
+            <button class="btn btn-secondary btn-secondary-mode-center">
+              <i class="fas fa-list"></i>
+            </button>
+            <button class="btn btn-secondary btn-secondary-mode-right">
+              <i class="fas fa-list"></i>
+            </button>
+          </div>
+        </div>
+        <div class="main__screen">
+          <div class="drag-box">DRAG ME</div>
+          <div class="drag-box">DRAG ME</div>
+        </div>
+      </div>
+    </main>
+    <!--
+        #FOOTER
+    -->
+    <footer></footer>
+  </body>
+</html>
